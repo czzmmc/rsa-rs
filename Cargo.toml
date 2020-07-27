@@ -59,6 +59,6 @@ name = "key"
 default = ["pem", "mesalock_sgx"]
 nightly = ["subtle/nightly", "num-bigint/nightly"]
 serde = ["num-bigint/serde", "serde_crate"]
-serde1 = ["serde"] # deprecated
+serde1 = ["serde_crate"] # deprecated
 expose-internals = []
 mesalock_sgx = ["sgx_tstd"]
