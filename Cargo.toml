@@ -23,7 +23,7 @@ thiserror = { git = "https://github.com/mesalock-linux/thiserror-sgx" }
 subtle = { git = "https://github.com/mesalock-linux/subtle-sgx" }
 simple_asn1 = { git = "https://github.com/czzmmc/simple-asn1-sgx.git" }
 pem = { git = "https://github.com/czzmmc/pem-rs.git", optional = true }
-digest = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx", features = ["std"] }
+digest = { git = "https://github.com/czzmmc/digest-sgx.git", features = ["std"] }
 sha2 = { git = "https://github.com/mesalock-linux/hashes-sgx" }
 sgx_tstd = { rev = "v1.1.2", git = "https://github.com/apache/teaclave-sgx-sdk.git", optional = true }
 
