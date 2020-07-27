@@ -31,7 +31,8 @@ sgx_tstd = { rev = "v1.1.2", git = "https://github.com/apache/teaclave-sgx-sdk.g
 version = "1.1.0"
 features = ["alloc", "zeroize_derive"]
 
-[dependencies.serde]
+[dependencies.serde_crate]
+package = "serde"
 optional = true
 version = "1.0.99"
 git = "https://github.com/mesalock-linux/serde-sgx"
@@ -57,7 +58,7 @@ name = "key"
 [features]
 default = ["pem", "mesalock_sgx"]
 nightly = ["subtle/nightly", "num-bigint/nightly"]
-serde = ["num-bigint/serde", "serde"]
+serde = ["num-bigint/serde", "serde_crate"]
 serde1 = ["serde"] # deprecated
 expose-internals = []
 mesalock_sgx = ["sgx_tstd"]
