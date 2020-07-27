@@ -1,4 +1,5 @@
 /// A list of provided hashes, implementing `Hash`.
+use std::prelude::v1::*;
 #[derive(Debug, Clone, Copy)]
 pub enum Hash {
     MD5,

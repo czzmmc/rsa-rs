@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use std::vec::Vec;
 
 use digest::DynDigest;

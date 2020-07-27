@@ -1,10 +1,11 @@
+use std::prelude::v1::*;
 use num_bigint::traits::ModInverse;
 use num_bigint::Sign::Plus;
 use num_bigint::{BigInt, BigUint};
 use num_traits::{FromPrimitive, One};
 use rand::{rngs::ThreadRng, Rng};
 #[cfg(feature = "serde")]
-use serde_crate::{Deserialize, Serialize};
+use serde::{Deserialize, Serialize};
 use std::ops::Deref;
 use zeroize::Zeroize;
 

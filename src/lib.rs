@@ -48,11 +48,19 @@
 //! assert_eq!(&data[..], &dec_data[..]);
 //! ```
 
+#![cfg_attr(all(feature = "mesalock_sgx",
+                not(target_env = "sgx")), no_std)]
+#![cfg_attr(all(target_env = "sgx", target_vendor = "mesalock"), feature(rustc_private))]
+
+
+#[cfg(all(feature = "mesalock_sgx", not(target_env = "sgx")))]
+extern crate sgx_tstd as std;
+
 #[macro_use]
 extern crate lazy_static;
 
 #[cfg(feature = "serde")]
-extern crate serde_crate;
+extern crate serde;
 
 #[cfg(test)]
 extern crate base64;
