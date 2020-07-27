@@ -1,4 +1,3 @@
-use std::prelude::v1::*;
 use rand::Rng;
 
 use digest::DynDigest;

@@ -60,7 +60,7 @@ extern crate sgx_tstd as std;
 extern crate lazy_static;
 
 #[cfg(feature = "serde")]
-extern crate serde;
+extern crate serde_crate;
 
 #[cfg(test)]
 extern crate base64;

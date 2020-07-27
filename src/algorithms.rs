@@ -1,4 +1,3 @@
-use std::prelude::v1::*;
 use digest::DynDigest;
 use num_bigint::traits::ModInverse;
 use num_bigint::{BigUint, RandPrime};
