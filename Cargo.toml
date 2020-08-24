@@ -12,7 +12,7 @@ categories = ["cryptography"]
 readme = "README.md"
 
 [dependencies]
-num-bigint = { package = "num-bigint-dig", version = "0.6", features = ["rand", "i128", "u64_digit", "prime", "zeroize"], git = "https://github.com/mesalock-linux/num-bigint-sgx", tag = "sgx_1.1.1" }
+num-bigint = { version = "0.6", features = ["rand", "i128", "u64_digit", "prime", "zeroize"], git = "https://github.com/mesalock-linux/num-bigint-sgx", tag = "sgx_1.1.1" }
 num-traits = { git = "https://github.com/mesalock-linux/num-traits-sgx", tag = "sgx_1.1.1" }
 num-integer = { git = "https://github.com/mesalock-linux/num-integer-sgx", tag = "sgx_1.1.1" }
 num-iter = {git = "https://github.com/mesalock-linux/num-iter-sgx", tag = "sgx_1.1.1" }
